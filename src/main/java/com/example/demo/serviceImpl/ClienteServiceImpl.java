@@ -31,11 +31,11 @@ public class ClienteServiceImpl implements ClienteService {
     //Guardar Nuevo Cliente
     @Transactional
     @Override
-    public Cliente saveCliente(ClienteDTO cliente) {
-        Cliente guardarCliente = Cliente.crear(
-                cliente.getNombre(),
-                cliente.getApellido(),
-                cliente.getEmail());
+    public Cliente saveCliente(ClienteDTO clienteDTO) {
+        Cliente guardarCliente = new Cliente();
+        guardarCliente.setNombre(clienteDTO.getNombre());
+        guardarCliente.setApellido(clienteDTO.getApellido());
+        guardarCliente.setEmail(clienteDTO.getEmail());
         clienteRepository.save(guardarCliente); //Guardamos los datos en la tabla
         Cliente clienteGuardado = guardarCliente;
         return clienteGuardado; //Retornar el objeto guardado
@@ -51,14 +51,13 @@ public class ClienteServiceImpl implements ClienteService {
     //Actualizar cliente
     @Transactional
     @Override
-    public Integer updateCliente(Integer id, ClienteDTO cliente) {
+    public Integer updateCliente(Integer id, ClienteDTO clienteDTO) {
         Cliente findCliente = clienteRepository.findClienteById(id);
         if (findCliente != null) {
-            Cliente updateCliente = Cliente.crear(
-                    cliente.getNombre(),
-                    cliente.getApellido(),
-                    cliente.getEmail());
-            clienteRepository.save(updateCliente);
+            findCliente.setNombre(clienteDTO.getNombre());
+            findCliente.setApellido(clienteDTO.getApellido());
+            findCliente.setEmail(clienteDTO.getEmail());
+            clienteRepository.save(findCliente);
             return 1; //Retornar un entero 1 en caso de exito;
         } else {
             return 2; //Retornar un entero 2 en caso que no existe el id en la tabla cliente

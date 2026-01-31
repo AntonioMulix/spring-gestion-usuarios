@@ -68,58 +68,29 @@ public class Usuario extends DateAudit implements Serializable {
     // ====================
     // Constructores
     // ====================
-    protected Usuario() {
+    public Usuario() {
         //requerido por JPA
     }
 
     //constructor
-    private Usuario(
+    public Usuario(
             String nombre,
             String apPaterno,
             String apMaterno,
             String username,
             String password,
-            Boolean activo
-    ) {
+            Boolean activo,
+            Set<Rol> roles) {
         this.nombre = nombre;
         this.apPaterno = apPaterno;
         this.apMaterno = apMaterno;
         this.username = username;
         this.password = password;
         this.activo = activo;
+        this.roles = roles;
     }
 
-    /**
-     * Método fábrica para crear instancias de Usuario de forma controlada.
-     * Centraliza la construcción del objeto y evita el uso directo del
-     *
-     * @param nombre
-     * @param apPaterno
-     * @param apMaterno
-     * @param username
-     * @param password
-     * @param activo
-     * @return
-     */
-    public static Usuario crear(
-            String nombre,
-            String apPaterno,
-            String apMaterno,
-            String username,
-            String password,
-            Boolean activo
-    ) {
-        return new Usuario(
-                nombre,
-                apPaterno,
-                apMaterno,
-                username,
-                password,
-                activo
-        );
-    }
-
-    //getters
+    //getters y setters
     public Integer getId() {
         return id;
     }
@@ -128,28 +99,56 @@ public class Usuario extends DateAudit implements Serializable {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getApPaterno() {
         return apPaterno;
+    }
+
+    public void setApPaterno(String apPaterno) {
+        this.apPaterno = apPaterno;
     }
 
     public String getApMaterno() {
         return apMaterno;
     }
 
+    public void setApMaterno(String apMaterno) {
+        this.apMaterno = apMaterno;
+    }
+
     public String getUsername() {
         return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Boolean getActivo() {
         return activo;
     }
 
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
+
     public Set<Rol> getRoles() {
         return roles;
+    }
+
+    public void setRoles(Set<Rol> roles) {
+        this.roles = roles;
     }
 
 }

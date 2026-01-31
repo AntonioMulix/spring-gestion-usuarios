@@ -1,4 +1,7 @@
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/DTO/ClienteDTO.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/DTO/UsuarioDTO.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/DTO/UsuarioGuardarDTO.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/DTO/UsuarioInfoDTO.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/DemoApplication.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/SwaggerConfiguration.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/controller/ClienteResponseCustom.java
@@ -7,8 +10,13 @@
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/entity/Usuario.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/exception/OutputEntity.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/ClienteRepository.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/RolRepository.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/UsuarioRepository.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/ClienteService.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/RolService.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/UsuarioService.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/serviceImpl/ClienteServiceImpl.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/serviceImpl/UsuarioServiceImpl.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/util/DateAudit.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/util/Response.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/util/RolNombre.java

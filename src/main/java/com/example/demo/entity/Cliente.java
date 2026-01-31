@@ -39,28 +39,17 @@ public class Cliente implements Serializable {
         El constructor vacio se mantiene protegido
         y es utilizado exclusivamente por JPA/Hibernate.
      */
-    protected Cliente() {
+    public Cliente() {
         // Requerido por JPA
     }
 
-    //Constructor para inicializar objeto
-    private Cliente(String nombre, String apellido, String email) {
+    public Cliente(Integer id, String nombre, String apellido, String email) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
     }
 
-    /*
-    * Método fábrica para crear una instancia de Cliente
-    * Se utiliza para encapsular la creación del objeto
-    * y vontrolar qué atributos pueden ser inicializados,
-    * evitando que se creen instancias en un estado inconsistente.
-     */
-    public static Cliente crear(String nombre, String apellido, String email) {
-        return new Cliente(nombre, apellido, email);
-    }
-
-    //getters
     public Integer getId() {
         return id;
     }

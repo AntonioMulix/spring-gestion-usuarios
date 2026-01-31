@@ -19,13 +19,13 @@ public interface ClienteService {
     public List<Cliente> findAllClientes();
 
     //Guardar nuevo cliente
-    public Cliente saveCliente(ClienteDTO cliente);
+    public Cliente saveCliente(ClienteDTO clienteDTO);
 
     //Buscar cliente
     public Cliente findClienteById(Integer id);
 
     //Actualizar cliente
-    public Integer updateCliente(Integer id, ClienteDTO cliente);
+    public Integer updateCliente(Integer id, ClienteDTO clienteDTO);
 
     //Eliminar cliente
     public Integer deleteCliente(Integer id);

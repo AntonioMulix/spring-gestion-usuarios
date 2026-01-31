@@ -31,18 +31,29 @@ public class Rol implements Serializable {
     @Column(unique = true)
     private RolNombre name;
 
-    protected Rol() {
+    public Rol() {
         // requerido por JPA
     }
 
-    //Constructor para inicializar objeto
-    private Rol(RolNombre name) {
+    public Rol(Integer id, RolNombre name) {
+        this.id = id;
         this.name = name;
     }
 
-    //Metodo de fabrica
-    public static Rol crear(RolNombre name) {
-        return new Rol(name);
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public RolNombre getName() {
+        return name;
+    }
+
+    public void setName(RolNombre name) {
+        this.name = name;
     }
 
 }

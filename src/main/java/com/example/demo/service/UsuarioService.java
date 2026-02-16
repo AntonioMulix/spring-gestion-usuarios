@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.DTO.UsuarioDTO;
 import com.example.demo.DTO.UsuarioGuardarDTO;
 import com.example.demo.entity.Usuario;
 import java.util.List;
@@ -21,6 +22,12 @@ public interface UsuarioService {
     //Encontrar un usuario por id
     public Usuario findOne(Integer id);
 
+    //Actualizar Usuario
+    public Usuario updateUsuario(Integer id, UsuarioDTO usuarioDTO);
+
+    //Cambiar estatus del usuario
+    public Integer estatusUsuario(Integer id);
+
     //Ver si el usuario esta activo por busqueda de id
     public Boolean activo(Integer id);
 
@@ -33,10 +40,12 @@ public interface UsuarioService {
     //Verificar sie xiste el usuario por id
     public boolean existById(int id);
 
-      //Verificar si existe usuario por username
+    //Verificar si existe usuario por username
 //    public Usuario existsByUsername(String username);
-
     //Actualizar password de usuario
     public Usuario updatePassword(Integer id, String password);
+
+    //-----------------Login---------------------------------------
+    public Usuario findByUsuarioSession(String username);
 
 }

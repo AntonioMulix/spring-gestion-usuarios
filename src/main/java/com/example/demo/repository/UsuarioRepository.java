@@ -25,16 +25,16 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
     //Tipo optional esta consulta es para verificar que el usuario exista y este activo
     @Query(value = "SELECT * FROM usuarios u WHERE u.username =:username"
-            + " AND u.activo = 1", nativeQuery = true)
+            + " AND u.activo = true", nativeQuery = true)
     public Optional<Usuario> findByUsername(@Param("username") String username);
 
     //Tipo boolean, esta consulra es para verificar que el usuario exista y este activo
     @Query(value = "SELECT * FROM usuarios u WHERE u.username = :username "
-            + " AND u.activo = 1", nativeQuery = true)
+            + " AND u.activo = true", nativeQuery = true)
     Usuario existByUsername(@Param("username") String username);
 
     //Tipo Usuario, esta consulta es para verficar la session activa
     @Query(value = "SELECT * FROM usuarios u WHERE u.username = :username"
-            + " AND u.activo = 1", nativeQuery = true)
+            + " AND u.activo = true", nativeQuery = true)
     Usuario findByUsuarioSession(@Param("username") String username);
 }

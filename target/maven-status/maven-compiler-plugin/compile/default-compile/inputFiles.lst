@@ -7,8 +7,8 @@
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/AddLogRepository.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/AddLogService.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/LogService.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/PasswordConfig.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/PersistenceConfig.java
-/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/SecurityConfig.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/SwaggerConfig.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/config/SystemControllerLog.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/controller/AdminLogController.java
@@ -24,6 +24,12 @@
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/ClienteRepository.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/RolRepository.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/repository/UsuarioRepository.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/AjaxAwareAuthenticationEntryPoint.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/JpaAuditingConfiguration.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/SessionListener.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/WebSecurityConfig.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/service/UserDetailsServiceImpl.java
+/home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/security/service/UsuarioPrincipal.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/AdminLogService.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/ClienteService.java
 /home/marco-romero/Documents/spring-projects/spring-usuarios/demo/src/main/java/com/example/demo/service/RolService.java
